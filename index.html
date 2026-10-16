@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capture- AI Powered Attendance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/images/project_logo.png">
+    
+</head>
+
+<body>
+    <nav class="navbar px-3 position-fixed w-100">
+        <a class="web-link" id="web-link" href="https://capture-ai.streamlit.app/" target="_blank">Live project</a>
+        <span class="logo">
+            <img class="logo-img" src="./images/project_logo.png" alt="Capture">
+            Capture</i>
+        </span>
+        <div class="nav-btn-container">
+            <a href="#home" class="nav-btn active-nav">Home</a>
+            <a href="#features" class="nav-btn">Features</a>
+            <a href="#journey" class="nav-btn">Journey</a>
+            <a href="#technologies" class="nav-btn">Technologies</a>
+        </div>
+        <button class="secondary-btn" onclick="document.getElementById('web-link').click();">
+            Try Capture<i class="bi bi-chevron-double-right"></i>
+        </button>
+    </nav>
+
+    <div class="container-fluid">
+
+        <div class="row min-vh-100">
+            <main class="col-12 d-flex flex-column">
+
+                <div id="home" class="row px-4 section min-vh-100 home-container ">
+                    <div class="col-3 text-center">
+                    </div>
+
+                    <div class="col-6 px-5 text-center home-content">
+                        <p class="descriptive-text">Welcome to the Capture an</p>
+                        <h2 class="header-text"><span class="highlight">AI powered</span> attendance system</h2>
+                        <p class="px-4 py-2 secondary-txt">Simplify the way of taking attendance of all the students in
+                            just one click! Sounds interesting right. That's what Capture does. Try it out right now <i
+                                class="bi bi-arrow-down"></i></p>
+                        <button class="primary-btn" onclick="document.getElementById('web-link').click();">
+                            Try Capture <i class="bi bi-chevron-double-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="col-3 text-center">
+                    </div>
+                </div>
+
+                <div id="features" class="row section">
+                    <div class="col-12 text-center p-4 features-container">
+                        <h2 class="section-header"><i class="bi bi-dash-lg"></i> Innovative Features <i
+                                class="bi bi-dash-lg"></i></h2>
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="feature-card">
+                                    <img src="./images/face-recognition.png" alt="Image" class="feature-img">
+                                    <h3 class="feature-heading">AI Face Analysis</h3>
+                                    <p class="secondary-text">Automatically recognize and mark students just by the facial
+                                        data available in the picture using insightFace.</p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="feature-card">
+                                    <img src="./images/shield.png" alt="Image" class="feature-img">
+                                    <h3 class="feature-heading">Encrypted Passwords</h3>
+                                    <p class="secondary-text">Use the Capture without any worries because your password is
+                                        strongly encrypted using the bcrypt.</p>
+                                </div>
+                            </div>
+                            <div class="col-3 ">
+                                <div class="feature-card ">
+                                    <img src="./images/work-process.png" alt="Image" class="feature-img">
+                                    <h3 class="feature-heading">Individual Workflows</h3>
+                                    <p class="secondary-text">Suitable for any kind of user whether you are a student,
+                                        professor or even an orgonization's authority.</p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="feature-card">
+                                    <img src="./images/database2.png" alt="Image" class="feature-img">
+                                    <h3 class="feature-heading">Permanent Storage</h3>
+                                    <p class="secondary-text">All the essential data is stored permanently, so the data
+                                        will be available whenever or wherever you need it at your fingertip.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="journey" class="row py-5 journey-container m-0 section">
+                    <h2 class="section-header text-center"><i class="bi bi-dash-lg"></i> Journey <i
+                            class="bi bi-dash-lg"></i></h2>
+                    <div class="row p-0 m-0 mb-4">
+                        <h2 class="text-center">Teacher's workflow</h2>
+                        <div class="row my-5">
+                            <div class="col-8">
+                                <h4>Section 01 - Login / Registration</h4>
+                                <ul>
+                                    <li><b>Registration</b></li>
+                                    <ul class="secondary-text">
+                                        <li>Enter an unique username to register as a teacher. if the username is already taken the user won't be able to take that username.</li>
+                                        <li>Then enter your full name and password. password is confirmed twice so the user do not enter the wrong password mistaknely.</li>
+                                        <li>Once you are registered, just login using username and password then you are ready to go</li>
+                                    </ul><br>
+
+                                    <li><b>Login</b></li>
+                                    <ul class="secondary-text">
+                                        <li>Login using the username and password that you used while registration. if not registered user then register first to continue.</li>
+                                    </ul>
+                                </ul>
+                            </div>
+                            <div class="col-4 p-0">
+                                <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner accent-border">
+                                        <div class="carousel-item active">
+                                            <img src="./images/teacher/teacher_login.png" class="image-card" alt="Image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/teacher/teacher_register.png" class="image-card" alt="Image">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev carousel-btn" type="button"
+                                        data-bs-target="#carousel1" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carousel1" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-8">
+                                <h4>Section 02 - Attendance</h4>
+                                <ul>
+                                    <li>You will get the attendance tab once you log in. Here you will get the option to select the lectures with pending attendance for today. You have 3 options to submit attendance:</li>
+                                    <br>
+                                    <ul>
+                                        <li><b>Upload Images : </b> Upload the group image of students here and the system will automatically identify and mark the registered students. in case if any student is not marked you can mark it manually later.</li>
+                                        <li><b>Use Camera : </b> Instead of uploading images from your device you can directly use camera to get student's facial data and mark their attendance. this saves unnecessary storage in your device. </li>
+                                        <li><b>Submit Manually : </b> If there is any kind of fallback like the device's camera is not working or anything else you can always submit the attendaance manually.</li>
+                                    </ul>
+                                </ul>
+                            </div>
+                            <div class="col-4 p-0">
+                                  <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner accent-border">
+                                        <div class="carousel-item active">
+                                            <img src="./images/teacher/teacher_attendance.png" class="image-card" alt="Image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/teacher/teacher_manual_attendance.png" class="image-card" alt="Image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/teacher/teacher_detect_faces.png" class="image-card" alt="Image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/teacher/teacher_submit_attendance.png" class="image-card" alt="Image">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev carousel-btn" type="button"
+                                        data-bs-target="#carousel2" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carousel2" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-8">
+                                <h4>Section 03 - Lectures & Subjects</h4>
+                                <ul>
+                                    <li>Every teacher have different subjects and lectures assigned to them. so just like an actual academic system the teacher will get it's own sujbects and lectures tab.</li>
+                                    <br>
+                                    <ul>
+                                        <li><b>Subjects : </b> The teachers can check the subjects assigned to them by the authority for this semester in the Subjects tab. All the subjects will appear here with the respective subject codes.</li>
+                                        <li><b>Lectures : </b> Teachers can check the scheduled lectures here and also they can have a record of previous lectures and their attendance status.</li>
+                                    </ul>
+                                </ul>
+                            </div>
+                            <div class="col-4 p-0">
+                                  <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner accent-border">
+                                        <div class="carousel-item active">
+                                            <img src="./images/teacher/teacher_lectures.png" class="image-card" alt="Image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/teacher/teacher_subjects.png" class="image-card" alt="Image">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev carousel-btn" type="button"
+                                        data-bs-target="#carousel3" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carousel3" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row p-0 m-0 my-4">
+                        <h2 class="text-center">Students's workflow</h2>
+                        <div class="row my-4">
+                            <div class="col-4">
+                                  <div id="carousel4" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner accent-border">
+                                        <div class="carousel-item active">
+                                            <img src="./images/student/student_login.png" class="image-card" alt="Image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/student/student_register.png" class="image-card" alt="Image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/student/student_register_image_upload.png" class="image-card" alt="Image">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev carousel-btn" type="button"
+                                        data-bs-target="#carousel4" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carousel4" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+
+
+                            </div>
+                            <div class="col-8">
+                                <h4>Section 01 - Login / Register</h4>
+                                <ul>
+                                    <li>Every student must have to register with a unique username and password and must have to upload their images. here's the process : </li>
+                                    <br>
+                                    <ul>
+                                        <li><b>Registration</b></li>
+                                        <ul>
+                                            <li>To register students have to enter a unique username and password. two students with same username can not exist.</li>
+                                            <li>after that the students have to upload 4-5 clear images where their face is clearly visible. note that if the images with different faces is uploaded the system will not accept those images.</li>
+                                            <li>Uploaded images will be used to recodnize the student from the images that the teacher uploads to take attendance</li>
+                                        </ul>
+
+                                        <li><b>Login</b></li>
+                                        <ul>
+                                            <li>Once the students have registered successfully. they can login in to the Capture using the unique username and password</li>
+                                            <li>And also they can login using their facial id by simply just clicking photo of themself. </li>
+                                        </ul>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-4">
+                                <img src="./images/student/student_attendance.png" alt="Image" class="image-card accent-border">
+                            </div>
+                            <div class="col-8">
+                                <h4>Section 02 - Attendance</h4>
+                                <ul>
+                                    <li>After successful login the students will be directed to the attendance tab here they will get these two sections : </li>
+                                    <br>
+                                    <ul>
+                                        <li><b>Attendance Summary : </b> Here students will have information about their attendance. for example the percentage of attended lectures. The number of total lectures taken and the number of total lectures attended. They can preview a detailed summary too.</li>
+                                        <li><b>Attendance Records : </b> Students can also check the attendance records of a particular date or a particular subject. </li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-4">
+                                <div id="carousel5" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner accent-border">
+                                        <div class="carousel-item active">
+                                            <img src="./images/student/student_lectures.png" class="image-card" alt="Image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/student/student_subject.png" class="image-card" alt="Image">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev carousel-btn" type="button"
+                                        data-bs-target="#carousel5" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carousel5" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+
+                            </div>
+                            <div class="col-8">
+                                <h4>Section 03 - Lectures & Subjects</h4>
+                                <ul>
+                                    <li>Students can also have the detail about scheduled lectures and the subjects of the semesters with the subject codes : </li>
+                                    <br>
+                                    <ul>
+                                        <li><b>Subjects : </b> Here students can check all the subjects of the semester with subject name and subject code</li>
+                                        <li><b>Lectures : </b> In the lectures tab students can check the scheduled lectures with the lecture time, teacher of that lecture and the status of the lecture(attendance pending or conducted). </li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <div class="row p-0 m-0 my-4">
+                        <h2 class="text-center">Authority's workflow</h2>
+                        <div class="row my-4">
+                            <div class="col-8">
+                                <h4>Section 01 - Security Verification</h4>
+                                <ul>
+                                    <li>In this workflow the majority of control is in the authority's hand. that's why the  authority have to enter the password set by the system each time they want to access the authority section.</li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <img src="./images/authority/authority_verification.png" alt="Image"  class="image-card accent-border">                                
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-8">
+                                <h4>Section 02 - Create Subjects</h4>
+                                <ul>
+                                    <li>Authority have access to create new courses, semester and subjects in this workflow. here's the usecase of them :</li>
+                                    <br>
+                                    <ul>
+                                        <li><b>Course & Semesters : </b> Whenever the authority wants to add a new subject in the workflow they have to decide the total semester in the course and course name. They can create a new course or add into existing course.</li>
+                                        <li><b>Subject name & Subject code : </b> After then the authority can create a new subject and give appropiate subject codes.</li>
+                                    </ul>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <img src="./images/authority/authority_subjects.png" alt="Image"
+                                    class="image-card accent-border">
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-8">
+                                <h4>Section 03 - View teachers & Assign subjects</h4>
+                                <ul>
+                                    <li>In the teachers tab you can get record of all the registered teachers and assign subjects to those teachers. here the explanation : </li>
+                                    <br>
+                                    <ul>
+                                        <li><b>Detail of teachers : </b> here you get all the registered teacher with their full name and username. also you can preview the subjects assigned to each teacher and assign a new subject to any teacher.</li>
+                                        <li><b>Assign subject : </b> The authority can view all the assigned subjects to the teacher and also it can assign a new subject just by clicking the "Add subject" button. and then selecting the required subject.</li>
+                                    </ul>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <div id="carousel6" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner accent-border">
+                                        <div class="carousel-item active">
+                                            <img src="./images/authority/authority_teachers.png" class="image-card" alt="Image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/authority/authority_assign_subjects.png" class="image-card" alt="Image">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev carousel-btn" type="button"
+                                        data-bs-target="#carousel6" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carousel6" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-8">
+                                <h4>Section 04 - Schedule Lectures</h4>
+                                <ul>
+                                    <li>This is the last and most important step of this workflow. scheduling lectures. the lecture that are scheduled here will run the entire workflow of the Capture system. authority can schedule a lecture based on the sujbects assigned to the teachers. </li>
+                                </ul>
+                            </div>
+                            <div class="col-4">
+                                <img src="./images/authority/authority_lectures.png" alt="Image"
+                                    class="image-card accent-border">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="technologies" class="row section">
+                    <div class="col-12 text-center p-4 ">
+                        <div class="row tech-container px-3 py-4">
+                            <h2 class="tech-header">Technologies</i></h2>
+                            <div class="col-3">
+                                <div class="tech-card">
+                                    <img src="./images/techs/scikit-learn.png" alt="Image" class="feature-img">
+                                    <h3 class="feature-heading">Sci-kit Learn <br> & <br> Insight Face</h3>
+                                    <p class="px-4 m-0 text-center">InsightFace is used to generate embeddings of the images and then Sci-kit Learn is used to comapre image embeddings for face recognition</p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="tech-card">
+                                    <img src="./images/techs/supabase-logo-icon.png" alt="Image" class="feature-img">
+                                    <h3 class="feature-heading">Supabase</h3>
+                                    <p class="px-4 m-0 text-center">Supabase provides a larger scale to store the data and faster reqeuest responses in the Capture application</p>
+                                </div>
+                            </div>
+                            <div class="col-3 ">
+                                <div class="tech-card">
+                                    <img src="./images/techs/streamlit.png" alt="Image" class="feature-img">
+                                    <h3 class="feature-heading">Streamlit</h3>
+                                    <p class="px-4 m-0 text-center">Deployed the entire project using streamlit making it extremely easy to deploy and responsive to any device.</p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="tech-card">
+                                    <img src="./images/techs/bcrypt-logo.jpg" alt="Image" class="feature-img">
+                                    <h3 class="feature-heading">Bcrypt</h3>
+                                    <p class="px-4 m-0 text-center">For the security of users, their passwords are hashed using bcrypt. so except the user no one can ever know their passwords.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-12 text-center">
+                        <h1>Checkout live project right now</h1>
+                        <button class="primary-btn mt-3" onclick="document.getElementById('web-link').click();">
+                            Try Capture<i class="bi bi-chevron-double-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row footer mt-3 py-5">
+                    <div class="col-4">
+                        <div class="d-flex">
+                            <img src="./images/project_logo.png" alt="Image" class="footer-img me-3">
+                            <h2 class="footer-header">Capture</h2>
+                        </div>
+                        <p class="footer-text-secondary mt-2">Join with us on other social media platforms : </p>
+                        <div class="d-flex gap-3">
+                            <a href="#"><i class="bi bi-github footer-icon"></i></a>
+                            <a href="#"><i class="bi bi-linkedin footer-icon"></i></a>
+                            <a href="#"><i class="bi bi-instagram footer-icon"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <h3 class="footer-subheader">Links</h3>
+                        <div class="d-flex flex-column gap-2">
+                            <a href="#home" class="footer-link">Home</a>
+                            <a href="#features" class="footer-link">Featuers</a>
+                            <a href="#journey" class="footer-link">Journey</a>
+                            <a href="#technologies" class="footer-link">Technologies</a>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <h3 class="footer-subheader">Technologies</h3>
+                        <div class="d-flex flex-column gap-2">
+                            <a href="https://scikit-learn.org" class="footer-link" target="_blank">Sci-kit Learn</a>
+                            <a href="https://www.insightface.ai" class="footer-link" target="_blank">InsightFace</a>
+                            <a href="https://supabase.com" class="footer-link" target="_blank">Supabase</a>
+                            <a href="https://streamlit.io" class="footer-link" target="_blank">Streamlit</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-2">
+                        <h3 class="footer-subheader">Credits</h3>
+                        <div class="d-flex flex-column gap-2">
+                            <a href="https://www.flaticon.com/free-icons/database" class="footer-link" target="_blank" title="database icons">Database icons created by srip - Flaticon</a>
+                            <a href="https://www.flaticon.com/free-icons/face-scan" class="footer-link" target="_blank" title="face scan icons">Face scan icons created by pojok d - Flaticon</a>
+                            <a href="https://www.flaticon.com/free-icons/process" class="footer-link" target="_blank" title="process icons">Process icons created by Magnific - Flaticon</a>
+                            <a href="https://www.flaticon.com/free-icons/protect" class="footer-link" target="_blank" title="protect icons">Protect icons created by SBTS2018 - Flaticon</a>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+
+    </div>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    // Grab all elements with the class '.carousel'
+    const carousels = document.querySelectorAll('.carousel');
+
+    const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        // Fetch or create the Bootstrap instance dynamically
+        const carouselInstance = bootstrap.Carousel.getOrCreateInstance(entry.target);
+        
+        if (entry.isIntersecting) {
+        carouselInstance.cycle(); // Visible -> Play
+        } else {
+        carouselInstance.pause(); // Hidden -> Pause
+        }
+    });
+    }, { threshold: 0.1 }); // Triggers when 10% visible
+
+    // Observe every carousel found on the page
+    carousels.forEach(carousel => observer.observe(carousel));
+    });
+
+    const navBtns = document.querySelectorAll(".nav-btn")
+    const sections = document.querySelectorAll(".section")
+
+    const options = {
+        root : null,
+        rootMargin : "-30% 0px -60% 0px",
+        threshold : 0
+    };
+
+    const observer = new IntersectionObserver((entries) =>{
+        entries.forEach(entry=>{
+            if(entry.isIntersecting){
+                const activeId = entry.target.getAttribute("id");
+
+                navBtns.forEach(link =>{
+                    if (link.getAttribute("href") === `#${activeId}`){
+                        link.classList.add("active-nav")
+                    }
+                    else{
+                        link.classList.remove("active-nav")
+                    }
+                })
+            }
+        })
+    }, options);
+
+    sections.forEach(section => {
+        observer.observe(section)
+    })
+
+</script>
+</body>
+
+</html>
